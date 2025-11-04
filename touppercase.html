@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uppercase Converter</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f9fa; text-align: center; }
+        nav { background: #1e3d59; padding: 15px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #ffcc00; }
+        input[type="text"], input[type="number"] { padding: 8px; width: 250px; margin: 10px; }
+        input[type="submit"] { padding: 8px 20px; background: #1e3d59; color: white; border: none; cursor: pointer; }
+        input[type="submit"]:hover { background: #16324f; }
+        h1 { color: #1e3d59; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/profile">Profile</a>
+        <a href="/works">toUpperCase</a>
+        <a href="/circle">Area of Circle</a>
+        <a href="/triangle">Area of Triangle</a>
+        <a href="/infix_postfix">Infix to Postfix</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <h1>Uppercase Converter</h1>
+    <form method="POST">
+        <input type="text" name="inputString" placeholder="Enter text" required>
+        <input type="submit" value="Convert">
+    </form>
+
+    {% if result %}
+    <h3>Result: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>

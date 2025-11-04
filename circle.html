@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of a Circle</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f6f9; text-align: center; }
+        nav { background: #1e3d59; padding: 15px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #ffcc00; }
+        input[type="number"] { padding: 8px; width: 200px; }
+        input[type="submit"] { padding: 8px 20px; background: #1e3d59; color: white; border: none; cursor: pointer; }
+        input[type="submit"]:hover { background: #16324f; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/profile">Profile</a>
+        <a href="/works">toUpperCase</a>
+        <a href="/circle">Area of Circle</a>
+        <a href="/triangle">Area of Triangle</a>
+        <a href="/infix_postfix">Infix to Postfix</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <h1>Area of a Circle</h1>
+    <form method="POST">
+        <input type="number" name="radius" placeholder="Enter radius" step="any" required>
+        <input type="submit" value="Calculate">
+    </form>
+
+    {% if area %}
+    <h3>Area = {{ area }}</h3>
+    {% endif %}
+</body>
+</html>

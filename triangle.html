@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of a Triangle</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f9fafc; text-align: center; }
+        nav { background: #1e3d59; padding: 15px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #ffcc00; }
+        input[type="number"] { padding: 8px; width: 200px; margin: 5px; }
+        input[type="submit"] { padding: 8px 20px; background: #1e3d59; color: white; border: none; cursor: pointer; }
+        input[type="submit"]:hover { background: #16324f; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/profile">Profile</a>
+        <a href="/works">toUpperCase</a>
+        <a href="/circle">Area of Circle</a>
+        <a href="/triangle">Area of Triangle</a>
+        <a href="/infix_postfix">Infix to Postfix</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <h1>Area of a Triangle</h1>
+    <form method="POST">
+        <input type="number" name="base" placeholder="Enter base" step="any" required>
+        <input type="number" name="height" placeholder="Enter height" step="any" required>
+        <input type="submit" value="Calculate">
+    </form>
+
+    {% if area %}
+    <h3>Area = {{ area }}</h3>
+    {% endif %}
+</body>
+</html>
